@@ -13,7 +13,7 @@ if(isset($_POST['submit'])) {
   $headers = "From: $email\r\nReply-To: $email\r\nX-Mailer: PHP/" . phpversion();
   
   if(mail($to, $subject, $message_body, $headers)) {
-    header('Location: thank-you.html');
+    echo "<script>alert('Thank you for your message! We will get back to you as soon as possible.');</script>";
     exit;
   } else {
     echo 'Error: Unable to send email. Please try again later.';
