@@ -1,3 +1,4 @@
+<?php
 if(isset($_GET['submit'])) {
   $name = $_GET['name'];
   $email = $_GET['email'];
@@ -18,3 +19,4 @@ if(isset($_GET['submit'])) {
     echo 'Error: Unable to send email. Please try again later.';
   }
 }
+?>
