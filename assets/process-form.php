@@ -1,8 +1,7 @@
-<?php
-if(isset($_POST['submit'])) {
-  $name = $_POST['name'];
-  $email = $_POST['email'];
-  $message = $_POST['message'];
+if(isset($_GET['submit'])) {
+  $name = $_GET['name'];
+  $email = $_GET['email'];
+  $message = $_GET['message'];
   
   $to = 'pulkitkoshal0@gmail.com';
   
@@ -19,4 +18,3 @@ if(isset($_POST['submit'])) {
     echo 'Error: Unable to send email. Please try again later.';
   }
 }
-?>
